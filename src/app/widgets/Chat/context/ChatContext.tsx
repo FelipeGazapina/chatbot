@@ -47,7 +47,7 @@ export function ChatProvider({children}: {children:ReactNode}){
     }
 
     return (
-        <ChatContext.Provider value={{messages, setHistorico}}>
+        <ChatContext.Provider value={{ messages, setHistorico}}>
             {children}
         </ChatContext.Provider>
     )

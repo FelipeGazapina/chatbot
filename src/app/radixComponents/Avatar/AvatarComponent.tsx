@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
 import * as Avatar from '@radix-ui/react-avatar';
-import './styles.css';
 
 interface AvatarComponentProps{
     username: string,
@@ -14,7 +13,7 @@ const AvatarComponent = ({username, url_image}: AvatarComponentProps) => (
     <Avatar.Root className="flex w-10 h-10 rounded-full bg-slate-400 items-center justify-center">
       {url_image && 
         <Avatar.Image
-          className="AvatarImage"
+          className="object-cover rounded-full w-10 h-10"
           src={url_image}
           alt="Pedro Duarte"
         />

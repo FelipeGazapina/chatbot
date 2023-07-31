@@ -37,9 +37,9 @@ export default function ChatSearch({}: ChatSearchProps){
             onKeyDown={handleKeyPress}
             value={search} 
             onChange={(ev) => setSearch(ev.target.value)} 
-            className='w-[15rem] rounded-md h-10 ml-5 p-2 text-sm shadow-md focus:border-slate-300' />
-           <button type='button' onClick={sendMessage} className='w-10 h-10 bg-emerald-300 rounded-full flex items-center justify-center ml-4 hover:bg-emerald-600'>
-            <Send size={20} color='#FFFFFF'/>
+            className='w-[15rem] rounded-md h-10 ml-5 p-2 text-sm shadow-md focus:border-slate-300 dark:bg-slate-200 dark:bg-opacity-30 dark:border-0 dark:text-slate-100' />
+           <button type='button' onClick={sendMessage} className='w-10 h-10 bg-emerald-300 rounded-full flex items-center justify-center ml-4 hover:bg-emerald-600 text-white dark:bg-slate-800 dark:hover:bg-slate-700'>
+                <Send size={20} />
            </button>
         </div>
     )
