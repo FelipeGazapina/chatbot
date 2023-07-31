@@ -9,7 +9,7 @@ interface ChatRootProps{
 }
 
 export default function ChatRoot({children}: ChatRootProps){
-    const [closed, setClosed] = useState<boolean>(false);
+    const [closed, setClosed] = useState<boolean>(true);
     
     return(
         <ChatProvider>
